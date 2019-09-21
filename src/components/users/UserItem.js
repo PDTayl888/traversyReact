@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
 
 class UserItem extends Component {
-        fart = {
-            id: 'id',
-            login: 'mojombo',
-            avatar_url: 'https://avatars0.githubusercontent.com/u/1?v=4',
-            html_url: 'https://github.com/mojombo'
-        }
-
         render() {
-        const {login, avatar_url, html_url} = this.fart;
+        const {login, avatar_url, html_url} = this.props.user;
 
         return (
             <div className="card text-center">
